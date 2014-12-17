@@ -1,0 +1,24 @@
+{
+    "name": "netglue/createsend-api",
+    "description": "Guzzle based api wrapper for createsend/campaignmonitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Steel",
+            "email": "george@net-glue.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "guzzle/guzzle": "~3.5"
+    },
+    "autoload": {
+    "psr-0": {
+      "NetglueCreateSend\\": "src/"
+    },
+    "classmap": [
+      "./"
+    ]
+  }
+}
