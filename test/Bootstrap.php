@@ -8,4 +8,4 @@ if(!file_exists($autoload)) {
 
 $loader = require $autoload;
 
-$loader->add('NetglueCreateSend\\', __DIR__);
+$loader->add('NetglueCreateSendApi\\', __DIR__);

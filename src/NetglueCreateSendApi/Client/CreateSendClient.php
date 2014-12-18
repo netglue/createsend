@@ -1,6 +1,6 @@
 <?php
 
-namespace NetglueCreateSend\Client;
+namespace NetglueCreateSendApi\Client;
 
 use Guzzle\Service\Client;
 use Guzzle\Service\Description\ServiceDescription;

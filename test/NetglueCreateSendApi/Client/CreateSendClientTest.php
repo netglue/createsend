@@ -1,6 +1,6 @@
 <?php
 
-namespace NetglueCreateSend\Client;
+namespace NetglueCreateSendApi\Client;
 
 class CreateSendClientTest extends \PHPUnit_Framework_TestCase
 {
