@@ -13,12 +13,9 @@
         "php": ">=5.3.3",
         "guzzle/guzzle": "~3.5"
     },
-    "autoload": {
-    "psr-0": {
-      "NetglueCreateSendApi\\": "src/"
-    },
-    "classmap": [
-      "./"
-    ]
-  }
+    "autoload" : {
+        "psr-0" : {
+            "NetglueCreateSendApi" : "src/"
+        }
+    }
 }
