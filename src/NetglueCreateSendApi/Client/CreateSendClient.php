@@ -19,19 +19,18 @@ class CreateSendClient extends Client
     public function __construct($apiKey, $version = self::API_VERSION)
     {
         parent::__construct();
-        $this->setDefaultOption('auth', array($apiKey, null, 'Basic'));
+        $this->setDefaultOption('auth', array($apiKey, 'none'));
 
         $this->setDescription(ServiceDescription::factory(sprintf(
             __DIR__ . '/ServiceDescription/CreateSend-%s.php',
             $version
         )));
 
-        // Prefix the User-Agent by SDK version
         $this->setUserAgent('netglue-createsend-php', true);
 
-        $this->setBaseUrl(sprintf('https://api.createsend.com/api/v%s', $version));
+        $this->setBaseUrl(sprintf('https://api.createsend.com/api/v%s/', $version));
 
-        //$this->getEventDispatcher()->addSubscriber(new ErrorHandlerListener());
+        $this->getEventDispatcher()->addSubscriber(new Listener\ExceptionListener());
     }
 
     /**

@@ -9,12 +9,12 @@ return array(
 
         'Subscribe' => array(
             'httpMethod'       => 'POST',
-            'uri'              => '/subscribers/{listid}.json',
+            'uri'              => 'subscribers/{ListId}.json',
             'summary'          => 'Subscribe the given email address to the list',
             'responseNotes'    => 'Returns the subscribed email address on success',
             'documentationUrl' => 'https://www.campaignmonitor.com/api/subscribers/',
             'parameters'       => array(
-                'listid' => array(
+                'ListId' => array(
                     'description' => 'The list id to connect to',
                     'location'    => 'uri',
                     'type'        => 'string',
